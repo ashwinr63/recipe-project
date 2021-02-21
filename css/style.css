@@ -1,5 +1,13 @@
 header {
     font-size: 1em;
-    background-color: yellow;
+    background-color: #FBB846;
     display: inline;
+}
+
+body {
+    background-color:darkgrey;
+}
+
+main{
+    color: white;
 }
