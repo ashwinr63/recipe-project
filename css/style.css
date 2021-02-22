@@ -1,13 +1,23 @@
-header {
-    font-size: 1em;
-    background-color: #FBB846;
-    display: inline;
+header.page-header {
+    background-image: url("/img/ingredients-960w.jpg");
+    display: inline-flex;
+    height: 300px;
+    min-width: 120px;
+    color:white;
+    text-shadow: #000 0 0 .2em;
 }
 
-body {
-    background-color:darkgrey;
+header.page-header > h5 {
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,fantasy;
+    margin: 2%;
+    color: #FBB846;
+    text-align: inherit;
 }
 
-main{
-    color: white;
+header.page-header>p {
+text-align: center;
+}
+
+main {
+    font: 1rem 'Fira Sans', sans-serif;
 }
