@@ -1,10 +1,23 @@
+html, body {
+    height: 100%;
+}
+main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
 header.page-header {
-    background-image: url("/img/ingredients-960w.jpg");
-    display: inline-block;
-    height: 300px;
-    min-width: 200px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/ingredients-1920w.jpg);
+    display: block;
+    height: 320px;
+    width: 480px;
     color:white;
-    text-shadow: #000 0 0 .2em;
+    background-blend-mode: multiply;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 header.page-header > h4 {
@@ -12,43 +25,106 @@ header.page-header > h4 {
     margin: 2%;
     color: #FBB846;
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
+nav.stats >h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:block;
+    font-weight: 200;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+nav.stats > h5 >strong {
+    color: #FBB846;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
 header.page-header> h6 {
 text-align: center;
 display: inline-block;
-
-
+margin-left: auto;
+margin-right: auto;
 }
 
 header.page-header > h2 {
     text-align: center;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 header.page-header > nav > h5 {
     text-align: justify;
     padding-left: 4px;
     font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 header.page-header > nav > h5 >strong {
  text-decoration: underline;
  display: inline-flex;
+ margin-left: auto;
+ margin-right: auto;
 
 
 }
-main {
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-body {
-    background-color: darkgray;
+span.navbar {
     margin-left: auto;
-    padding-left: auto;
+    margin-right:auto;
+}
+article.content > img {
+     height: 350px;
+     width: 480px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-article > img {
-     border-image: auto;
+article.content > h2 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+article.content {
+    background: fixed;
+    display: contents;
+    background-color: white;
+}
+
+div.container > span.navbar > li>a {
+    
+    color: #FBB846;
+    display: block;
+    text-align: justify;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div.container {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2A2B32;
+    
+}
+
+section.ingredients > ul.ing {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
