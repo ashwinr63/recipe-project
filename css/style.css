@@ -24,7 +24,7 @@ header.page-header > h4 {
     font: 'Dancing Script', cursive,fantasy;
     margin: 2%;
     color: #FBB846;
-    text-align: left;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 
@@ -111,15 +111,21 @@ div.container > span.navbar > li>a {
     max-height: 100%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
+div.container > span.navbar {
+    background-color: #2A2B32;
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 div.container {
     max-width: 100%;
     max-height: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #2A2B32;
+    display: block;
     
 }
 
@@ -127,4 +133,39 @@ section.ingredients > ul.ing {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
+    display: block;
+}
+
+section.process {
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+section.process > ol > li.mix {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.process > ol > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section.ingredients > h3 {
+    display: inline;
+    vertical-align: middle;
+}
+
+.footer {
+    display: inline;
+    margin-left: auto;
 }
