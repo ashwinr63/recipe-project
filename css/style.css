@@ -8,7 +8,8 @@
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    height: auto;
+    height: 100vw;
+    
 }
 
 .page-header {
@@ -25,8 +26,8 @@
     background-color: #FBB846;
     color: black;
     text-align: justify;
-    margin-left: 1.5em;/* changed the margin*/
-    margin-top: 1.8em;/* changed the margin*/
+    margin-left: 1.2em;/* changed the margin*/
+    margin-top: 1.1em;/* changed the margin*/
     padding: 0.3em 0.8em;/* added padding*/
     border-radius: 0.2em;/* added border radius*/
     display: inline;
@@ -39,16 +40,18 @@ margin-right: auto;
 padding: 12px;
 }
 
-all > header.page-header > h1 {
-    font-family: fantasy;
+.all > header.page-header > h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: capitalize;
-    margin: 3em;
+    padding-left: 15px;
+    padding-top: 3px;
 }
 .stats > p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display:inline;
     font-weight: 100;
     text-align: justify;
+    margin: 15px;
 }
 .stats > h5 > strong {
     color: #FBB846;
@@ -68,20 +71,20 @@ all > header.page-header > h1 {
 /* navbar style begin*/
 .navbar{
     background-color: #2A2B32;
-    display: inline-flexbox;
+    display: block;
 }
 .navbar > ul{
     list-style-type:none;
 }
 .navbar ul li{
-    padding: 0.7em 1.1em;
+    padding: 0.5em 0.8em;
 }
 .navbar ul li a{
     text-decoration: none;
-    text-align: justify;
+    text-align: justify-all;
     color:#FBB846;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 /*navbar style end*/
 span.navbar {
@@ -125,20 +128,14 @@ div.container > span.navbar {
     margin-right: auto;
     position: relative;
 }
-div.container {
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    justify-content: center;   
-}
 section.ingredients > ul.ing {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+
+
 section.process {
     margin-left: auto ;
     margin-right: auto;
@@ -190,9 +187,9 @@ footer.footer {
 }
 section.result > img {
     display: block;
-    justify-content: center;
-    
+    justify-content: center; 
 }
+
 section.content > h2 {
     color: black;
     max-width: 100%;
@@ -212,10 +209,7 @@ section.content > q, figcaption {
     padding-left: 5px;
     text-align: justify;
 }
-section {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 section.process > ol.list-item {
     margin-left: 25%;
     margin-right: 25%;
@@ -233,6 +227,4 @@ table, thead, tr, td {
 
 section.sch{
     text-align: justify;
-    margin: auto;
-
 }
