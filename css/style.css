@@ -1,23 +1,21 @@
-*{
+/* *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.all{  /*this class brings all the content of the website in the center*/
-    width: 50%;
+} */
+
+.all{  /*this class brings all the story of the website in the center */
+    min-width: 50%;
     margin-left: 25%;
     margin-right: 25%;
     height: 100vw;
-    
 }
-
 .page-header {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/ingredients-1920w.jpg);
     background-position: top;
     color:white;
     background-blend-mode: multiply;
-    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -32,7 +30,6 @@
     border-radius: 0.2em;/* added border radius*/
     display: inline;
 }
-
 .page-header > p {
 font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 margin-left: auto;
@@ -40,38 +37,34 @@ margin-right: auto;
 padding: 12px;
 }
 
-.all > header.page-header > h1 {
+.page-header > h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: capitalize;
     padding-left: 15px;
     padding-top: 3px;
 }
-.stats > p {
+.stats > li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display:inline;
     font-weight: 100;
-    text-align: justify;
-    margin: 15px;
+    padding: 4px;
+    display: flex;
 }
 .stats > h5 > strong {
     color: #FBB846;
-    padding-left: 10px;
 }
 
 /* background color for strong */
-
-.page-header > ul.stats > p > strong {
+.stats > li > strong {
     background-color: #FBB846;
-    font-weight: 700;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: inline;
+    display: flex;
     color:black;
-    text-align: justify;
 }
 /* navbar style begin*/
 .navbar{
     background-color: #2A2B32;
     display: block;
+    margin-top: -1rem;
 }
 .navbar > ul{
     list-style-type:none;
@@ -81,127 +74,75 @@ padding: 12px;
 }
 .navbar ul li a{
     text-decoration: none;
-    text-align: justify-all;
+    text-align: justify;
     color:#FBB846;
     font-weight: 700;
     font-size: 1em;
 }
 /*navbar style end*/
-span.navbar {
-    margin-left: auto;
-    margin-right:auto;
-}
-article.content > img {
-    height: 350px;
-    width: 480px;
+.list > .ing .equip {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: aquamarine;
+    color: #2A2B32;
+}
+.list > h3 {
+    display: block;
+    color: #2A2B32;
 }
 
-article.content > h2 {
-    display: inline-block;
+footer {
+    display: inline;
     margin-left: auto;
     margin-right: auto;
-    color: blanchedalmond;
-}
-article.content {
-    background: fixed;
-    display: contents;
-    background-color: white;
-    color: antiquewhite;
-}
-div.container > span.navbar > li>a {
-    color: #FBB846;
+    color: white;
     display: block;
-    text-align: justify;
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-div.container > span.navbar {
     background-color: #2A2B32;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-section.ingredients > ul.ing {
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 
-
-section.process {
-    margin-left: auto ;
-    margin-right: auto;
-    color: black;
-}
-section.process > ol > li.mix {
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    display: block;
-}
-section.process > ol > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto ;
-    max-width: 100%;
-    max-height: 100%;
-}
-section.ingredients > h3 {
-    display: inline;
-    vertical-align: middle;
-    color:black;
-}
-.footer {
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
-}
-section.content  > img{
-    width: 480px;
-    max-height: 100%;
-    max-width: 100%;
-}
-footer.footer > p {
+footer > p {
     display: block;
     margin-left: auto;
     text-decoration: underline;
     color: #FBB846;
     font-weight: bold;
 }
-footer.footer {
+
+section.result > img {
     display: block;
-    background-color: #2A2B32;
-    color: white;
+    justify-content: center; 
+}
+table, thead, tr, td {
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: justify;
+}
+section.process {
+    margin-left: auto ;
+    margin-right: auto;
+    color: black;
+}
+section.story  > img{
+    width: 480px;
+    max-height: 100%;
+    max-width: 100%;
 }
 section.result > img {
     display: block;
     justify-content: center; 
 }
-
-section.content > h2 {
+section.story > h2 {
     color: black;
     max-width: 100%;
     display: block;
 }
-section.content > p {
+section.story > p {
     color: black;
     max-width: 100%;
     display: block;
     text-align: justify;
 }
-section.content > q, figcaption {
+section.story > q, figcaption {
     color: #2A2B32;
     max-width: 100%;
     display: block;
@@ -217,14 +158,7 @@ section.process > ol.list-item {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-table, thead, tr, td {
-    padding: 10px;
-    margin: auto;
-    border: 2px solid black;
-    border-collapse: collapse;
-    text-align: justify;
-}
-
 section.sch{
+    display: block;
     text-align: justify;
 }
