@@ -34,7 +34,7 @@ img {
 .header > .wrapper {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/ingredients-1920w.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     color: white;
@@ -218,6 +218,34 @@ section.story > q, figcaption {
     right: 0px; 
 } */
 
+#Ingredients .toggle__bar{
+    width: 60%;
+    height: 100%;
+    margin: 15px 0;
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    z-index: -1; 
+}
+#toggle_bar_item1 h5{ 
+    color: #030303;
+    z-index: 99;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #ffbc48;
+    padding: 3px;
+}
+#toggle_bar_item2 h5{
+    color: #030303;
+    z-index: 99;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 3px;
+}
 /* Toggle section finish */
 section.process {
     margin-left: auto ;
@@ -269,13 +297,16 @@ footer {
     display: flow-root;
     color: white;
     background-color: #2A2B32;
+    align-items: center;
 }
 
-footer > p {
+footer.foot_info > p {
     margin-left: auto;
     text-decoration: underline;
     color: #FBB846;
     font-weight: bold;
+    display: flow-root;
+    justify-content: space-between;
 }
 
 @media only screen and (min-width: 788px)
@@ -290,6 +321,7 @@ footer > p {
         background: white;
         width: 50em;
         margin: 0px auto;
+        margin-top: -3em;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 
          "list navbar"
@@ -310,7 +342,7 @@ footer > p {
         padding-left: 1em;
         margin-right: 1em;
     }
-    .wrapper {
+    .header >.wrapper {
         /* margin: 0px auto; */
         margin: 0px auto;
         width: 50em;
