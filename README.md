@@ -5,3 +5,8 @@ This is the main branch and all the relevant details will be added to the main b
 
 2) Lots of the codes have been commented on both css and html ends. this is basically was for testing purposes. constant updates will be pushed to the repo.
 
+References:
+
+https://w3schools.com
+https://stackoverflow.com
+https://css-tricks.com
